@@ -1,0 +1,99 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #e0f7fa;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Navigation Styling */
+.navbar {
+  width: 200px;
+  background-color: #0a0a0a;
+  color: cyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-links li {
+  margin: 20px 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: cyan;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00e5ff;
+}
+
+.menu-toggle {
+  margin-top: auto;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: cyan;
+}
+
+/* Main Content Styling */
+.main-content {
+  margin-left: 200px; /* space for sidebar */
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00e5ff;
+  margin-bottom: 1rem;
+}
+
+/* Learn Page Enhancements */
+.learn-content {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #e0f7fa;
+  padding-right: 1rem;
+}
+
+h2 {
+  color: #4dd0e1;
+  margin-top: 1.5rem;
+}

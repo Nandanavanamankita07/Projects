@@ -1,0 +1,28 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  background: url('https://path-to-your-ocean-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 255, 0.7);
+}

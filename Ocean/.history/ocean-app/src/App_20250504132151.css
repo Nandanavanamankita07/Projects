@@ -1,0 +1,108 @@
+/* src/App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #f0f8ff;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #00d8ff;
+  margin: 20px 0;
+}
+
+/* NavBar styles */
+.navbar {
+  width: 220px;
+  background: #111;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.navbar ul li {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.navbar ul li a {
+  color: #00d8ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: #333;
+  border-left: 5px solid #00d8ff;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .navbar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .navbar ul li {
+    margin: 0;
+  }
+
+  .navbar ul li a {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+/* Chart Container Fix for Content Padding */
+.ResponsiveContainer {
+  margin-top: 20px;
+}

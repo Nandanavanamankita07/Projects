@@ -1,0 +1,10 @@
+/* App.css */
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  flex-grow: 1; /* The main content takes up remaining space */
+  padding: 20px;
+}

@@ -1,0 +1,71 @@
+/* NavBar.css */
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 200;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: cyan;
+  transition: all 0.3s ease;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -220px;
+  width: 200px;
+  height: 100vh;
+  background-color: #0a0a0a;
+  color: cyan;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 150;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.logo {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-links li {
+  margin: 20px 0;
+}
+
+.nav-links a {
+  color: cyan;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* Main content shifts when sidebar opens */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  transition: margin-left 0.3s ease;
+  margin-left: 0;
+}
+
+.main-content.shifted {
+  margin-left: 200px;
+}
